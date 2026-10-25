@@ -218,3 +218,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 1. 过滤 Keil MDK (STM32) 编译生成的庞大垃圾文件
+*.axf
+*.htm
+*.build_log.htm
+*.dep
+*.crf
+*.d
+*.o
+*.lnp
+*.lst
+*.map
+*.iex
+*.sct
+Listings/
+Objects/
+
+# 2. 过滤 VS Code / PlatformIO / Arduino 临时文件
+.vscode/
+.pio/
+*.bin
+*.hex
+*.elf
+
+# 3. 过滤 SolidWorks 机械临时锁定文件 (防崩溃生成的隐藏垃圾)
+~$*
+*.bak
+*.swp
+
+# 4. 过滤系统与解压临时文件
+Thumbs.db
+.DS_Store
+*.zip
+*.tar.gz
